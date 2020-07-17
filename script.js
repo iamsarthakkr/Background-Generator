@@ -1,6 +1,15 @@
+const _ = require("lodash");
+
+console.log(_);
+
 const backgroundPara = document.querySelector(
   "#gradientDiplay"
 );
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8];
+//using lodash method
+console.log("answer: ", _.without(array, 3));
+
 const leftColor = document.querySelector(".left_color");
 const rightColor = document.querySelector(".right_color");
 const body = document.getElementById("gradient");
